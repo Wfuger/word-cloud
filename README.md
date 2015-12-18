@@ -1,9 +1,6 @@
 # Word Cloud
 
-Brought to you by [lmoehn](https://github.com/lmoehn)
-
-You work for a tech conference company.  Somebody transcribes all the noteworthy quotes from all the speakers,
-and enters them into a system.  This system outputs a JSON file that looks like this:
+You work for a tech conference company. Somebody transcribes all the noteworthy quotes from all the speakers, and enters them into a system. This system outputs a JSON file that looks like this:
 
 ```
 {
@@ -22,35 +19,64 @@ and enters them into a system.  This system outputs a JSON file that looks like 
 }
 ```
 
-Your mission, should you choose to accept it, is to turn this data into a hash that can be used by a word cloud.  The
-output should look like this:
+Your mission is to turn that data into an object that can be used by a word cloud. The output should look like this:
 
 ```
 {
-  "optimize" => { :count => 1, :people => ["Ila Huels"] },
-  "web-enabled" => { :count => 1, :people => ["Ila Huels"] },
-  "supply-chains" => { :count => 1, :people => ["Ila Huels"] },
-  "brand" => { :count => 2, :people => ["Ila Huels", "Cristopher Feest"] },
-  "sexy" => { :count => 2, :people => ["Ila Huels", "Cristopher Feest"] },
-  "channels" => { :count => 2, :people => ["Ila Huels", "Cristopher Feest"] },
-  "envisioneer" => { :count => 1, :people => ["Ila Huels"] },
-  "robust" => { :count => 1, :people => ["Ila Huels"] },
-  "e-commerce" => { :count => 1, :people => ["Ila Huels"] },
-  "transform" => { :count => 1, :people => ["Ila Huels"] },
-  "wireless" => { :count => 1, :people => ["Ila Huels"] },
-  "architectures" => { :count => 1, :people => ["Ila Huels"] },
-  "benchmark" => { :count => 3, :people => ["Ila Huels", "Cristopher Feest"] },
-  "cross-platform" => { :count => 2, :people => ["Ila Huels", "Cristopher Feest"] },
-  "partnerships" => { :count => 2, :people => ["Ila Huels", "Cristopher Feest"] },
-  "24/7" => { :count => 1, :people => ["Cristopher Feest"] },
-  "paradigms" => { :count => 1, :people => ["Cristopher Feest"] }
+  "optimize" : { count: 1, people: ["Ila Huels"] },
+  "web-enabled" : { count: 1, people: ["Ila Huels"] },
+  "supply-chains" : { count: 1, people: ["Ila Huels"] },
+  "brand" : { count: 2, people: ["Ila Huels", "Cristopher Feest"] },
+  "sexy" : { count: 2, people: ["Ila Huels", "Cristopher Feest"] },
+  "channels" : { :count : 2, :people : ["Ila Huels", "Cristopher Feest"] },
+  "envisioneer" : { count: 1, people: ["Ila Huels"] },
+  "robust" : { count: 1, people: ["Ila Huels"] },
+  "e-commerce" : { count: 1, people: ["Ila Huels"] },
+  "transform" : { count: 1, people: ["Ila Huels"] },
+  "wireless" : { count: 1, people: ["Ila Huels"] },
+  "architectures" : { count: 1, people: ["Ila Huels"] },
+  "benchmark" : { count: 3, people: ["Ila Huels", "Cristopher Feest"] },
+  "cross-platform" : { count: 2, people: ["Ila Huels", "Cristopher Feest"] },
+  "partnerships" : { count: 2, people: ["Ila Huels", "Cristopher Feest"] },
+  "24/7" : { count: 1, people: ["Cristopher Feest"] },
+  "paradigms" : { count: 1, people: ["Cristopher Feest"] }
 }
 ```
 
-The words appear in a mix of uppercase and lowercase letters, but the resulting word-cloud should be all lowercase,
-and counts and speakers should be case-insensitive.
+The words appear in a mix of uppercase and lowercase letters, but the resulting word-cloud should be all lowercase, and counts and speakers should be case-insensitive.
 
-# Extra
+## EXERCISE
+In `src/word_cloud.js` write a function (or functions) that processes all the words in the `data/quotes.json` file
+and outputs the above desired result.
 
-Write a file in your bin directory that processes all the words in the `data/quotes.json` file.
+## TRY TEST DRIVING THIS!
 
+```
+jasmine init
+spec/word_cloud_spec.js
+```
+
+__You will need to:__
+
+* Export your function(s) to your spec file
+
+__Jasmine tests look like this__
+
+```
+describe('Somewhat general description', function() {
+  it('more specific description here', function() {
+
+
+    })
+  })
+
+```
+
+__HELP__
+
+* Practice breaking the problem into tiny bits, don't bite it all off at once.
+* User smaller samples of data in your tests
+* After achieving desired results with sample data, run your giant file
+through to confirm it works with your actual data
+
+  
