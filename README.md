@@ -43,7 +43,7 @@ Your mission is to turn that data into an object that can be used by a word clou
 }
 ```
 
-The words appear in a mix of uppercase and lowercase letters, but the resulting word-cloud should be all lowercase, and counts and speakers should be case-insensitive.
+The words appear in a mix of uppercase and lowercase letters, but the resulting word-cloud should be all lowercase.
 
 ## EXERCISE
 In `src/word_cloud.js` write a function (or functions) that processes all the words in the `data/quotes.json` file
