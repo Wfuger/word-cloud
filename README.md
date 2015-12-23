@@ -28,7 +28,7 @@ Your mission is to turn that data into an object that can be used by a word clou
   "supply-chains" : { count: 1, people: ["Ila Huels"] },
   "brand" : { count: 2, people: ["Ila Huels", "Cristopher Feest"] },
   "sexy" : { count: 2, people: ["Ila Huels", "Cristopher Feest"] },
-  "channels" : { :count : 2, :people : ["Ila Huels", "Cristopher Feest"] },
+  "channels" : { count : 2, people : ["Ila Huels", "Cristopher Feest"] },
   "envisioneer" : { count: 1, people: ["Ila Huels"] },
   "robust" : { count: 1, people: ["Ila Huels"] },
   "e-commerce" : { count: 1, people: ["Ila Huels"] },
