@@ -49,7 +49,7 @@ The words appear in a mix of uppercase and lowercase letters, but the resulting 
 In `src/word_cloud.js` write a function (or functions) that processes all the words in the `data/quotes.json` file
 and outputs the above desired result.
 
-## TRY TEST DRIVING THIS!
+## TEST DRIVING IT!
 
 ```
 jasmine init
@@ -78,5 +78,3 @@ __HELP__
 * User smaller samples of data in your tests
 * After achieving desired results with sample data, run your giant file
 through to confirm it works with your actual data
-
-  
