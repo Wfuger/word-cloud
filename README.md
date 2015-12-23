@@ -60,6 +60,13 @@ __You will need to:__
 
 * Export your function(s) to your spec file
 
+```
+module.exports = {
+  someFunc: function() {
+    return "hello";
+  }
+}
+```
 __Jasmine tests look like this__
 
 ```
@@ -78,3 +85,5 @@ __HELP__
 * User smaller samples of data in your tests
 * After achieving desired results with sample data, run your giant file
 through to confirm it works with your actual data
+
+__SEE TESTS BRANCH FOR PROVIDED TESTS__
