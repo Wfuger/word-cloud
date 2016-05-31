@@ -55,35 +55,3 @@ and outputs the above desired result.
 jasmine init
 spec/word_cloud_spec.js
 ```
-
-__You will need to:__
-
-* Export your function(s) to your spec file
-
-```
-module.exports = {
-  someFunc: function() {
-    return "hello";
-  }
-}
-```
-__Jasmine tests look like this__
-
-```
-describe('Somewhat general description', function() {
-  it('more specific description here', function() {
-
-
-    })
-  })
-
-```
-
-__HELP__
-
-* Practice breaking the problem into tiny bits, don't bite it all off at once.
-* User smaller samples of data in your tests
-* After achieving desired results with sample data, run your giant file
-through to confirm it works with your actual data
-
-__SEE TESTS BRANCH FOR PROVIDED TESTS__
